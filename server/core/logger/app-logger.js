@@ -10,7 +10,7 @@ if (!fs.existsSync(dir)) {
 }
 
 
-const logger = new winston.Logger({
+const logger = winston.createLogger({
   level: 'info',
   transports: [
     new (winston.transports.Console)({
